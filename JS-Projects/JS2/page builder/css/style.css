@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  display: flex;
+}
+#container {
+  flex-grow: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  min-height: 80vh;
+}
+#side-menu {
+  width: 300px;
+  background: linear-gradient(red, black);
+  color: #fff;
+  padding: 20px;
+}
+.form-group label {
+  color: #fff;
+}
+.btn-purple {
+  background-color: purple;
+  color: white;
+  width: 150px;
+  height: 35px;
+  padding: 10px 10px 10;
+}

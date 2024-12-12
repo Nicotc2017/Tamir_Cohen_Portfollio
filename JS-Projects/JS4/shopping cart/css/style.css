@@ -1,0 +1,89 @@
+/* Custom Styles */
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Form Styling */
+#productForm .form-label {
+  font-weight: 600;
+}
+
+
+#productForm .btn-add {
+  background-color: #007bff; /* Primary Blue */
+  border-color: #007bff;
+  color: #fff; /* White Text */
+  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+#productForm .btn-add:hover {
+  background-color: #0056b3; /* Darker Blue on Hover */
+  border-color: #0056b3;
+  transform: scale(1.05); /* Slightly Increase Size on Hover */
+}
+
+#productForm .btn-add:active {
+  background-color: #004085; /* Even Darker Blue on Click */
+  border-color: #003366;
+  transform: scale(0.95); /* Slightly Decrease Size on Click */
+}
+
+
+.table-dark th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table-dark th i {
+  margin-right: 8px;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+
+#dragArea {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+#dragArea.drag-over {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+
+.carousel-item .fruit-icon {
+  font-size: 5rem;
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.carousel-item .fa-pepper-hot {
+  color: #dc3545; /* Example for specific icon color */
+}
+
+
+.toast {
+  min-width: 250px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .carousel-item .fruit-icon {
+    font-size: 3rem;
+  }
+}

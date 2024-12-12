@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <!-- Dark Mode Toggle -->
+    <div class="form-check form-switch position-fixed top-0 end-0 p-3">
+        <input class="form-check-input" type="checkbox" id="darkModeToggle" aria-label="Toggle dark mode">
+        <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+    </div>
+
+    <div class="container my-5">
+        <!-- Title -->
+        <h1 class="text-center mb-4 primary-color" data-aos="fade-down"> To-Do List</h1>
+
+        <!-- Task Input Form -->
+        <div class="card p-4 mb-4" data-aos="fade-up">
+            <form id="taskForm" class="row g-3" aria-labelledby="taskFormLabel">
+                <h2 id="taskFormLabel" class="visually-hidden">Task Input Form</h2>
+                <div class="col-md-6">
+                    <label for="taskName" class="form-label">Task Name</label>
+                    <input type="text" class="form-control" id="taskName" placeholder="Enter task name" required aria-required="true">
+                </div>
+                <div class="col-md-3">
+                    <label for="dueDate" class="form-label">Due Date</label>
+                    <input type="date" class="form-control" id="dueDate" required aria-required="true">
+                </div>
+                <div class="col-md-3">
+                    <label for="urgency" class="form-label">Urgency Level</label>
+                    <select id="urgency" class="form-select" required aria-required="true">
+                        <option selected disabled value="">Choose...</option>
+                        <option value="blue">Low</option>
+                        <option value="yellow">Medium</option>
+                        <option value="red">High</option>
+                    </select>
+                </div>
+                <input type="hidden" id="taskId">
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Add Task</button>
+                    <button type="button" class="btn btn-secondary d-none" id="cancelEditBtn">Cancel Edit</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="row mb-4" data-aos="fade-in">
+            <div class="col-md-6">
+                <input type="text" id="searchTask" class="form-control" placeholder="Search tasks" aria-label="Search tasks">
+            </div>
+            <div class="col-md-6">
+                <select id="filterUrgency" class="form-select" aria-label="Filter by urgency">
+                    <option selected value="all">All Urgency Levels</option>
+                    <option value="blue">Low</option>
+                    <option value="yellow">Medium</option>
+                    <option value="red">High</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Progress Meter -->
+        <div class="mb-4" data-aos="fade-in">
+            <label for="progress" class="form-label">Progress</label>
+            <div class="progress" aria-label="Task completion progress">
+                <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;">0%</div>
+            </div>
+        </div>
+
+        <!-- Task Tables -->
+        <div class="row" data-aos="zoom-in">
+            <!-- In Progress Tasks -->
+            <div class="col-md-6">
+                <h3>In Progress <span id="inProgressCount"></span></h3>
+                <table class="table table-striped" id="inProgressTable" aria-label="In Progress Tasks">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Due Date</th>
+                            <th>Urgency</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Tasks will be appended here -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- Completed Tasks -->
+            <div class="col-md-6">
+                <h3>Completed <span id="completedCount"></span></h3>
+                <table class="table table-striped" id="completedTable" aria-label="Completed Tasks">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Due Date</th>
+                            <th>Urgency</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Completed tasks will be appended here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Drag and Drop Instructions -->
+        <p class="text-center text-muted" data-aos="fade-in">Drag and drop tasks to reorder or change their status.</p>
+    </div>
+
+    <!-- Alert Messages -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="alertPlaceholder"></div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="confirmationModalLabel" class="modal-title">Confirm Action</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalBody">
+            Are you sure you want to perform this action?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger" id="confirmActionBtn">Yes, delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Dragula JS for drag and drop -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"></script>
+    <!-- Dragula CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.css" rel="stylesheet">
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

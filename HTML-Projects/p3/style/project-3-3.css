@@ -1,0 +1,58 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.container-fluid {
+  height: 100%;
+  width: 100%;
+}
+.bg-image {
+  background-image: url(../Coffee.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  margin-left: 500px;
+}
+
+#logo img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.form-title {
+  font-family: normal normal;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #020253;
+}
+.form-group input {
+  border-bottom: 3px solid #020253;
+  border-radius: 5px;
+  background-color: #e5eeff;
+  direction: rtl;
+}
+.btn-custom {
+  background-color: #020253;
+  color: white;
+  border-radius: 5px;
+}
+.btn-custom:hover {
+  background-color: #020253;
+}
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    direction: rtl;
+}
+.hero{
+background-image: url(images/path16);
+background-size: cover;
+background-position: center center;
+padding: 230px 0;
+min-height: 290px;
+}
+.hero > .content{
+    width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    background: #000;
+
+}
+.form{
+    width: 1180px;
+    height: 150px;
+    background: #000;
+    margin: 50px auto;
+
+
+}
+h2{
+    color: yellow;
+}

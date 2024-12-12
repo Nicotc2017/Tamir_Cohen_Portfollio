@@ -1,0 +1,46 @@
+:root {
+  --deep-green: #006400;
+  --light-green: #90ee90;
+}
+body {
+  background-color: var(--light-green);
+  color: var(--deep-green);
+}
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+  background-color: var(--deep-green);
+  border-color: var(--deep-green);
+}
+.btn-primary:hover {
+  background-color: #004d00;
+  border-color: #004d00;
+}
+.btn-success {
+  background-color: var(--deep-green);
+  border-color: var(--deep-green);
+}
+.btn-success:hover {
+  background-color: #004d00;
+  border-color: #004d00;
+}
+.dish-card {
+  height: 100%;
+  border-color: var(--deep-green);
+}
+.card-body {
+  background-color: #f0fff0;
+}
+.list-group-item {
+  border-color: var(--deep-green);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--deep-green);
+}

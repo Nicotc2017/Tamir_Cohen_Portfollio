@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolios | Tamir Cohen</title>
+    <meta name="description"
+        content="Portfolio website of Tamir Cohen showcasing web development projects, services, and contact information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Monsieur+La+Doulaise&family=Rouge+Script&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta name="keywords"
+        content="Tamir Cohen, Portfolio, Web Development, HTML Projects, JavaScript Projects, CSS, API">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha384-..." crossorigin="anonymous">
+    <link rel="preload" href="./style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./style.css">
+    </noscript>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tamir Cohen",
+        "email": "tamirnicolascohen@gmail.com",
+        "url": "https://www.yourportfolio.com",
+        "sameAs": [
+            "https://www.linkedin.com/in/tamir-cohen",
+            "https://www.facebook.com/yourprofile",
+            "https://wa.me/0504700058"
+        ],
+        "jobTitle": "Web Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Your Company Name"
+        }
+    }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Main Navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#main" aria-label="Home">
+                    <img src="./images/tamir-cohen.jpg" alt="Profile of Tamir Cohen" class="rounded-circle img-fluid"
+                        style="width: 50px; height: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#main">Main</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#html-projects">HTML Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#javascript-projects">JAVASCRIPT Projects</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#recommendations">Recommendations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section id="main" class=" mainsection d-flex align-items-center justify-content-center" style="height: 100vh;"
+            aria-labelledby="main-heading">
+            <div class="text-center ">
+                <h1 id="main-heading" tabindex="0">Welcome to My Portfolio</h1>
+
+            </div>
+        </section>
+
+        <!-- Icons Section -->
+        <section id="icons" class="py-5" aria-label="Technology Icons">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <i class="fab fa-bootstrap fa-3x" title="Bootstrap" aria-hidden="true"></i>
+                    <i class="fab fa-css3-alt fa-3x" title="CSS3" aria-hidden="true"></i>
+                    <i class="fab fa-html5 fa-3x" title="HTML5" aria-hidden="true"></i>
+                    <i class="fab fa-sass fa-3x" title="SASS" aria-hidden="true"></i>
+                    <i class="fab fa-js fa-3x" title="JavaScript" aria-hidden="true"></i>
+                    <i class="fas fa-plug fa-3x" title="API" aria-hidden="true"></i>
+                    <i class="fas fa-code fa-3x" title="ES6" aria-hidden="true"></i>
+                    <i class="fab fa-node-js fa-3x" title="Node.js" aria-hidden="true"></i>
+                    <i class="fas fa-object-group fa-3x" title="OOP" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5 text-white" aria-labelledby="about-heading">
+            <div class="container text-center">
+                <img src="./images/tamir-cohen.jpg" alt="About Tamir Cohen" class="rounded-circle mb-4" width="200"
+                    height="200">
+                <h2 id="about-heading" tabindex="0">About Me</h2>
+                <p class="text-white p-2 shadow-lg" id="main-paragraph" tabindex="0">Let me introduce myself. My name is
+                    Tamir Cohen. I am 35 years old with a solid background in programming. I bring extensive experience
+                    in various technologies including
+                    JavaScript, Node.js, HTML, CSS, ES6, SASS, APIs and Object Oriented Programming (OOP).
+                    My education and practical experience have equipped me with the skills required to provide quality
+                    solutions tailored to your unique needs.
+                    My expertise encompasses a variety of services, and I am proud of my commitment to excellence,
+                    innovation and personal attention. Whether you are looking for website development, design services
+                    for an existing website,
+                    or a complete website development and design package, I am here to assist you with my extensive
+                    knowledge and experience.
+                    I believe that building strong, long-term relationships with my clients is the key to success. Your
+                    trust and confidence in me is of the utmost importance to me, and I strive to exceed your
+                    expectations in everything I do.
+                    Thank you for choosing me. I look forward to working with you and contributing to your continued
+                    success
+                    <br>
+                <p tabindex="0">"Technology is the tool that allows us to turn great ideas into reality and to
+                    constantly develop in a changing world."</p>
+                Sincerely, Tamir Cohen</p>
+                <a href="./images/CV - Tamir Cohen.pdf" class="btn btn-primary" aria-label="Download Resume">Download
+                    Resume</a>
+            </div>
+        </section>
+        <hr class="my-5" style="border-top: 10px solid #ffffff;">
+        <!-- Services Section -->
+        <section id="services" class="py-5" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 class="text-center mb-4" id="services-heading">Services</h2>
+                <div class="row g-4">
+                    <!-- Service 1 -->
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                        <div class="service-box text-center p-4 rounded" style="height: 100%;">
+                            <i class="fas fa-robot fa-2x mb-3" style="color: #8B0000;" aria-hidden="true"></i>
+                            <h4 tabindex="0">Advanced AI Tools</h4>
+                            <p>Integrating cutting-edge AI technologies to enhance your projects.</p>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-box text-center p-4 rounded" style="height: 100%;">
+                            <i class="fas fa-paint-brush fa-2x mb-3" style="color: #8B0000;" aria-hidden="true"></i>
+                            <h4 tabindex="0">Unique Designs</h4>
+                            <p>Creating visually stunning and unique designs tailored to your brand.</p>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-box text-center p-4 rounded" style="height: 100%;">
+                            <i class="fas fa-code fa-2x mb-3" style="color: #8B0000;" aria-hidden="true"></i>
+                            <h4 tabindex="0">Web Development</h4>
+                            <p>Building responsive and dynamic websites tailored to your needs.</p>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-box text-center p-4 rounded" style="height: 100%;">
+                            <i class="fas fa-cloud fa-2x mb-3" style="color: #8B0000;" aria-hidden="true"></i>
+                            <h4 tabindex="0">Cloud Integration</h4>
+                            <p>Seamlessly integrating cloud services to optimize your workflow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="my-5" style="border-top: 10px solid #ffffff;">
+        <!-- HTML Projects Section -->
+        <section id="html-projects" class="py-5" aria-labelledby="html-projects-heading">
+            <div class="container">
+                <h2 class="text-center mb-4" id="html-projects-heading" style="color: #ffffff;">HTML Projects</h2>
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <img src="./images/1.png" class="card-img-top" alt="HTML Project 1">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 style="color: #ffffff;" tabindex="0">HTML Project Title 1</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-bootstrap fa-2x" style="color: #7952B3;" aria-hidden="true"></i>
+                                    <i class="fab fa-sass fa-2x" style="color: #CC6699;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./HTML-Projects/p1/p1.html" class="btn btn-secondary mt-auto d-block mx-auto"
+                                    style="width: 50%;" aria-label="View HTML Project 1">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <img src="./images/3.png" class="card-img-top" alt="HTML Project 2">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 style="color: #ffffff;" tabindex="0">HTML Project Title 2</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-bootstrap fa-2x" style="color: #7952B3;" aria-hidden="true"></i>
+                                    <i class="fab fa-sass fa-2x" style="color: #CC6699;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./HTML-Projects/p2/p-2.html" class="btn btn-secondary mt-auto d-block mx-auto"
+                                    style="width: 50%;" aria-label="View HTML Project 2">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <img src="./images/2.png" class="card-img-top" alt="HTML Project 3">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 style="color: #ffffff;" tabindex="0">HTML Project Title 3</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-bootstrap fa-2x" style="color: #7952B3;" aria-hidden="true"></i>
+                                    <i class="fab fa-sass fa-2x" style="color: #CC6699;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./HTML-Projects/p3/p3.html" class="btn btn-secondary mt-auto d-block mx-auto"
+                                    style="width: 50%;" aria-label="View HTML Project 3">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <img src="./images/5.jpg" class="card-img-top" alt="HTML Project 4">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 style="color: #ffffff;" tabindex="0">HTML Project Title 4</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-bootstrap fa-2x" style="color: #7952B3;" aria-hidden="true"></i>
+                                    <i class="fab fa-sass fa-2x" style="color: #CC6699;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./HTML-Projects/p4/p4.html" class="btn btn-secondary mt-auto d-block mx-auto"
+                                    style="width: 50%;" aria-label="View HTML Project 4">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./images/4.jpg" class="card-img-top" alt="HTML Project 5">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 style="color: #ffffff;" tabindex="0">HTML Project Title 5</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-bootstrap fa-2x" style="color: #7952B3;" aria-hidden="true"></i>
+                                    <i class="fab fa-sass fa-2x" style="color: #CC6699;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./HTML-Projects/p5/p5.html" class="btn btn-secondary mt-auto d-block mx-auto"
+                                    style="width: 50%;" aria-label="View HTML Project 5">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./images/6.jpg" class="card-img-top" alt="HTML Project 6">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 style="color: #ffffff;" tabindex="0">HTML Project Title 6</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-bootstrap fa-2x" style="color: #7952B3;" aria-hidden="true"></i>
+                                    <i class="fab fa-sass fa-2x" style="color: #CC6699;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./HTML-Projects/p6/p6.html" class="btn btn-secondary mt-auto d-block mx-auto"
+                                    style="width: 50%;" aria-label="View HTML Project 6">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5" style="border-top: 10px solid #ffffff;">
+        <!-- JavaScript Projects Section -->
+        <section id="javascript-projects" class="py-5" aria-labelledby="javascript-projects-heading">
+            <div class="container">
+                <h2 class="text-center mb-4" id="javascript-projects-heading" style="color: #ffffff;">JAVASCRIPT
+                    Projects</h2>
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./JS-Projects/Images/JS1-BP.png" class="card-img-top" alt="JS Project 1">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 tabindex="0" style="color: #ffffff;">JS Project Title 1</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-js fa-2x" style="color: #F7DF1E;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./JS-Projects/JS1/mathgame/math-game-landing.html"
+                                    class="btn btn-secondary mt-auto d-block mx-auto" style="width: 50%;"
+                                    aria-label="View JS Project 1">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./JS-Projects/Images/JS2-BP.png" class="card-img-top" alt="JS Project 2">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 tabindex="0" style="color: #ffffff;">JS Project Title 2</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-js fa-2x" style="color: #F7DF1E;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./JS-Projects/JS2/page builder/Page-Builder-landing.html"
+                                    class="btn btn-secondary mt-auto d-block mx-auto" style="width: 50%;"
+                                    aria-label="View JS Project 2">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./JS-Projects/Images/JS3-BP.png" class="card-img-top" alt="JS Project 3">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 tabindex="0" style="color: #ffffff;">JS Project Title 3</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-js fa-2x" style="color: #F7DF1E;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./JS-Projects/JS3/restaurant-landing.html"
+                                    class="btn btn-secondary mt-auto d-block mx-auto" style="width: 50%;"
+                                    aria-label="View JS Project 3">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./JS-Projects/Images/JS4-BP.png" class="card-img-top" alt="JS Project 4">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 tabindex="0" style="color: #ffffff;">JS Project Title 4</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-js fa-2x" style="color: #F7DF1E;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./JS-Projects/JS4/shopping cart/SC-landing.html"
+                                    class="btn btn-secondary mt-auto d-block mx-auto" style="width: 50%;"
+                                    aria-label="View JS Project 4">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./JS-Projects/Images/JS5-BP.png" class="card-img-top" alt="JS Project 5">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 tabindex="0" style="color: #ffffff;">JS Project Title 5</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-js fa-2x" style="color: #F7DF1E;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./JS-Projects/JS5/shuffle/shuffle-landing.html"
+                                    class="btn btn-secondary mt-auto d-block mx-auto" style="width: 50%;"
+                                    aria-label="View JS Project 5">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./JS-Projects/Images/JS6-BP.png" class="card-img-top" alt="JS Project 6">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 tabindex="0" style="color: #ffffff;">JS Project Title 6</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-js fa-2x" style="color: #F7DF1E;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./JS-Projects/JS6/user-managment-system/user-landing.html"
+                                    class="btn btn-secondary mt-auto d-block mx-auto" style="width: 50%;"
+                                    aria-label="View JS Project 6">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 7 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./JS-Projects/Images/JS7-BP.png" class="card-img-top" alt="JS Project 7">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 tabindex="0" style="color: #ffffff;">JS Project Title 7</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-js fa-2x" style="color: #F7DF1E;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./JS-Projects/JS7/XO.game/xogame-landing.html"
+                                    class="btn btn-secondary mt-auto d-block mx-auto" style="width: 50%;"
+                                    aria-label="View JS Project 7">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 8 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./JS-Projects/Images/JS8-BP.png" class="card-img-top" alt="JS Project 8">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 tabindex="0" style="color: #ffffff;">JS Project Title 8</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-js fa-2x" style="color: #F7DF1E;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./JS-Projects/JS8/snake-game-landing.html"
+                                    class="btn btn-secondary mt-auto d-block mx-auto" style="width: 50%;"
+                                    aria-label="View JS Project 8">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 9 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./JS-Projects/Images/JS9-BP.png" class="card-img-top" alt="JS Project 9">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h4 tabindex="0" style="color: #ffffff;">JS Project Title 9</h4>
+                                <div class="d-flex justify-content-around mb-3">
+                                    <i class="fab fa-html5 fa-2x" style="color: #E34F26;" aria-hidden="true"></i>
+                                    <i class="fab fa-css3-alt fa-2x" style="color: #1572B6;" aria-hidden="true"></i>
+                                    <i class="fab fa-js fa-2x" style="color: #F7DF1E;" aria-hidden="true"></i>
+                                </div>
+                                <a href="./JS-Projects/JS9/todolist-landing.html"
+                                    class="btn btn-secondary mt-auto d-block mx-auto" style="width: 50%;"
+                                    aria-label="View JS Project 9">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="my-5" style="border-top: 10px solid #ffffff;">
+        <!-- Recommendations Section -->
+        <section id="recommendations" class="py-5 bg-black" aria-labelledby="recommendations-heading">
+            <div class="container">
+                <h2 class="text-center mb-4 text-white" id="recommendations-heading ">Recommendations</h2>
+                <div class="row g-4">
+                    <!-- Recommendation 1 -->
+                    <div class="col-md-4" data-aos="flip-left">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <p class="card-text">"Tamir delivered an outstanding website that exceeded our
+                                    expectations."</p>
+                                <h5 class="card-title text-white">- Customer One</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recommendation 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <p class="card-text">"Professional and timely service. Highly recommended!"</p>
+                                <h5 class="card-title text-white">- Customer Two</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recommendation 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <p class="card-text">"Excellent communication and attention to detail."</p>
+                                <h5 class="card-title text-white">- Customer Three</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recommendation 4 -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <p class="card-text">"Our website traffic increased significantly after Tamir's
+                                    redesign."</p>
+                                <h5 class="card-title text-white">- Customer Four</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recommendation 5 -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <p class="card-text">"A pleasure to work with and delivered beyond expectations."</p>
+                                <h5 class="card-title text-white">- Customer Five</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get in Touch Section -->
+        <section id="contact" class="py-5  text-white" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 class="text-center mb-4" id="contact-heading">Get in Touch</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <form>
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name"
+                                    aria-label="Full Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailAddress" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="emailAddress"
+                                    placeholder="Enter your email address" aria-label="E-mail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phoneNumber"
+                                    placeholder="Enter your phone number" aria-label="Phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="messageContent" class="form-label">Message</label>
+                                <textarea class="form-control" id="messageContent" rows="3"
+                                    placeholder="Enter your message" aria-label="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary d-block mx-auto"
+                                aria-label="Send Message">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6 order-md-1">
+                        <img src="./images/Rectangle 41.png" alt="Envelope Illustration" class="img-fluid w-50"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Links Section -->
+        <footer class=" text-white py-4" aria-labelledby="footer-heading">
+            <div class="container">
+                <div class="row">
+                    <!-- Social Icons and Details -->
+                    <div class="col-md-9 d-flex flex-wrap justify-content-center align-items-start mb-3"
+                        id="social-links">
+                        <div class="m-3 text-center">
+                            <a href="https://wa.me/0504700058" class="text-white mb-2 d-block" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp fa-2x"></i>
+                            </a>
+                            <p>050-4700058</p>
+                        </div>
+                        <div class="m-3 text-center">
+                            <a href="tel:0504700058" class="text-white mb-2 d-block" aria-label="Phone">
+                                <i class="fas fa-phone fa-2x"></i>
+                            </a>
+                            <p>050-4700058</p>
+                        </div>
+                        <div class="m-3 text-center">
+                            <a href="mailto:tamirnicolascohen@gmail.com" class="text-white mb-2 d-block"
+                                aria-label="Email">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </a>
+                            <p>TAMIRNICOLASCOHEN@GMAIL.COM</p>
+                        </div>
+                        <div class="m-3 text-center">
+                            <a href="https://www.google.com/maps?q=Your+Current+Location" target="_blank"
+                                class="text-white mb-2 d-block" aria-label="Location">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </a>
+                            <p><a href="https://www.google.com/maps?q=Your+Current+Location" target="_blank"
+                                    class="text-white">Current Location</a></p>
+                        </div>
+                        <div class="m-3 text-center">
+                            <a href="https://www.linkedin.com/in/tamir-cohen" class="text-white mb-2 d-block"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                            <p>#TAMIR COHEN</p>
+                        </div>
+                        <div class="m-3 text-center">
+                            <a href="https://www.facebook.com/yourprofile" class="text-white mb-2 d-block"
+                                aria-label="Facebook">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                            <p>Facebook Profile</p>
+                        </div>
+                    </div>
+                    <!-- Footer Text -->
+                    <div class="row-md-3 text-md-end text-center">
+                        <p>All Rights Reserved</p>
+                        <p class="fst-italic">TAMIR COHEN</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="dark-mode-toggle" class="btn btn-dark position-fixed bottom-0 end-0 m-3" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
+</body>
+
+</html>

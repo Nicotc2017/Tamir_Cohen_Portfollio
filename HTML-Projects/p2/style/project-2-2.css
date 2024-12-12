@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+body {
+  margin: 0;
+  direction: rtl;
+}
+
+.pg-1 {
+  width: 100%;
+  background-image: url(../images/Path\ 15.png);
+  height: 590px;
+  position: relative;
+}
+
+.content {
+  width: 569px;
+  height: 643px;
+  background: #1a1a1ad4;
+
+  position: absolute;
+  top: 160px;
+  right: 295px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 50px;
+  justify-content: center;
+  color: white;
+  padding: 0px 30px;
+}
+
+form h1 {
+  font-family: "Heebo", sans-serif;
+}
+
+form p {
+  font-family: "Heebo", sans-serif;
+}
+
+form label {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+}
+
+form input {
+  height: 50px;
+  background-color: #ffffff;
+  border: #d31c75 solid 2px;
+}
+
+.form-btn {
+  background-color: #d31c75;
+  width: max-content;
+  padding: 10px 32px;
+  color: #ffffff;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+div > a {
+  display: block;
+  position: fixed;
+  text-align: center;
+  color: whitesmoke;
+  height: 50px;
+  min-width: 100%;
+  align-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: x-large;
+  bottom: 0px;
+}

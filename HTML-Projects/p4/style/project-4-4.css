@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+  
+}
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+.form-container h1 {
+    color: #FDBD03;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.form-container p {
+    color: #020253;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.btn-custom {
+    background-color: #FDBD03;
+    color: #050303;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-control {
+    background: #E5EEFF;
+    border-bottom: #FDBD03 2px solid;
+}
+
+label {
+    display: flex;
+    text-align: right;
+    font-size: 16px;
+}
+
+.head-img{
+    display: inline-flex;
+    flex-direction: row;
+    background: #FDBD03;
+    border-radius: 50px;
+    margin-top: 50px;
+    height: 50px;
+    width: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-image: url(../images/whatsapp.png);
+}
+
+.icon-i>img {
+    display: inline-flex;
+    flex-direction: row;
+    background: #FDBD03;
+    border-radius: 50px;
+    margin-top: 50px;
+    height: 50px;
+    width: 50px;
+    background-position: center center;
+
+}
+.icon-i :nth-child(4){
+    background-image: url(../images/in.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+.icon-i :nth-child(3){
+    background-image: url(../images/facebook.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 8px;
+
+}
+.icon-i :nth-child(2){
+    background-image: url(../images/instagram.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+
+}
+.icon-i :nth-child(1){
+    background-image: url(../images/phone.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
