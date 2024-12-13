@@ -1,66 +1,172 @@
-.card-container {
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    max-width: 800px;
-    margin: 200px auto;
+/* Ensure the html and body take up the full height of the viewport */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+/* Apply a transparent orange background to the entire body */
+body {
+  background-color: rgba(255, 166, 0, 0.6); /* Transparent orange */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Optional: If you want a specific container to have additional styling */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+/* Style individual cards */
 .card {
-    position: relative;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    cursor: pointer;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background: linear-gradient(
+    to right,
+    #00f7ff,
+    #00e2ff,
+    #00c9ff,
+    #00aeff,
+    #628eff,
+    #a077f8,
+    #d655e0,
+    #ff00b6,
+    #ff0089,
+    #ff3b5f,
+    #ff6537,
+    #ff8800
+  );
+  border-radius: 8px;
+  cursor: pointer;
+  width: 150px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card::after {
-    content: "";
-    background: linear-gradient(50deg, #6a11cb, #2575fc , #6a11cb 100%);
-    border-radius: 8px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    transform: rotateY(180deg);
-
+  content: "";
+  background: url(../images/JSFireGCPic.png) no-repeat center center / cover !important;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
 }
 
 .card.flipped::after {
-    transform: rotateY(0deg);
-    opacity: 0;
+  transform: rotateY(0deg);
+  opacity: 0;
 }
 
 .card.matched::after {
-    opacity: 0;
+  opacity: 0;
 }
-.back-to-home {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+
+/* Responsive Typography */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .card {
+    width: 140px;
+    margin: 9px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 130px;
+    margin: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  .card {
+    width: 120px;
+    margin: 7px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.75em;
+  }
+  .card {
+    width: 100px;
+    margin: 5px;
+  }
+  .back-to-home {
     width: 40px;
     height: 40px;
+  }
+}
+
+
+.back-to-home {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 .back-to-home:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .back-to-home img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .back-to-home {
+    width: 40px;
+    height: 40px;
+  }
 }
