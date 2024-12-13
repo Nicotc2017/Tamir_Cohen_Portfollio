@@ -8,22 +8,25 @@
 </head>
 <body>
     <h1>Tic Tac Toe</h1>
-    <div id="game">
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
+    <div id="game" role="grid">
+        <div class="cell" data-cell role="gridcell" tabindex="0" aria-label="Cell 1"></div>
+        <div class="cell" data-cell role="gridcell" tabindex="0" aria-label="Cell 2"></div>
+        <div class="cell" data-cell role="gridcell" tabindex="0" aria-label="Cell 3"></div>
+        <div class="cell" data-cell role="gridcell" tabindex="0" aria-label="Cell 4"></div>
+        <div class="cell" data-cell role="gridcell" tabindex="0" aria-label="Cell 5"></div>
+        <div class="cell" data-cell role="gridcell" tabindex="0" aria-label="Cell 6"></div>
+        <div class="cell" data-cell role="gridcell" tabindex="0" aria-label="Cell 7"></div>
+        <div class="cell" data-cell role="gridcell" tabindex="0" aria-label="Cell 8"></div>
+        <div class="cell" data-cell role="gridcell" tabindex="0" aria-label="Cell 9"></div>
     </div>
-    <div id="status"></div>
+    <div id="status" aria-live="polite"></div>
     <div id="buttons">
         <button id="startButton">Start Game</button>
         <button id="resetButton">Reset</button>
     </div>
+    <a href="../../../index.html" class="back-to-home" aria-label="Back to Home">
+        <img src="../../../images/tamir-cohen.jpg" alt="Back to Home">
+    </a>
     <script src="js/xogame.js"></script>
 </body>
 </html>
